@@ -7,7 +7,7 @@ sr.pause_threshold = 0.5
 def create_task():
     text = ""
     print("Что добавить в заметки?\n")
-    with open("to_do_list.txt", 'a') as file:
+    with open("to_do_list.txt", 'a', encoding="utf-8") as file:
         while text != "":
             text = recognize_voice()
             if text != "":
